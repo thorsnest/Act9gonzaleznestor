@@ -33,10 +33,18 @@ android {
     buildFeatures {
         viewBinding true
     }
+    buildscript {
+        repositories {
+            google()
+        }
+    }
+
+
 }
 
 dependencies {
 
+    implementation 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'

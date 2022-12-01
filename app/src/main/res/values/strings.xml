@@ -8,6 +8,6 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Categories</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_seccio">Secció</string>
+    <string name="carret_de_compra">Carret de compra</string>
 </resources>

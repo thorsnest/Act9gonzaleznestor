@@ -2,6 +2,7 @@ package com.example.act9gonzaleznestor
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -24,12 +25,9 @@ class Adaptador(private val tipusList: List<TipusCategories>): RecyclerView.Adap
             holder.binding.imatgeTipusIv.getLayoutParams().width = 1000
         }else{
             holder.itemView.setOnClickListener{
-                when(position) {
-                    1 -> it.findNavController().navigate(R.id.nav_gallery)
-                    2 -> it.findNavController().navigate(R.id.nav_slideshow)
-                    3 -> it.findNavController().navigate(R.id.nav_gallery)
-                    4 -> it.findNavController().navigate(R.id.nav_gallery)
-                }
+                var bundle = bundleOf()
+                bundle.putInt("key", position)
+                it.findNavController().navigate(R.id.nav_seccio, bundle)
             }
         holder.binding.nomTipusTv.text = tipusList[position].nom
         Glide.with(holder.binding.root.context).load(tipusList[position].imatge).into(holder.binding.imatgeTipusIv)

@@ -9,17 +9,27 @@
         android:id="@+id/nav_home"
         android:name="com.example.act9gonzaleznestor.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_seccio"
+            app:destination="@id/nav_seccio"
+            app:enterAnim="@android:anim/cycle_interpolator" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.act9gonzaleznestor.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_seccio"
+        android:name="com.example.act9gonzaleznestor.ui.gallery.SeccioFragment"
+        android:label="@string/menu_seccio"
+        tools:layout="@layout/fragment_seccio" >
+        <argument
+            android:name="key"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.act9gonzaleznestor.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/carret_de_compra"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

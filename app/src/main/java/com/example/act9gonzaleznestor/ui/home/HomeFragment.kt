@@ -51,11 +51,11 @@ class HomeFragment : Fragment() {
         val urlMovilitat = "https://cms-images.mmst.eu/osyynfyvlyjc/6RI4ZRlFJsAeg3uaiMjFM9/4879d28922b1e795e1c8357fc4bb99d9/patiente1.png?q=80&w=264"
         llistaTipusCategories.addAll(
             listOf(
-                TipusCategories(0, "",urlTitol),
-                TipusCategories(1, "Smartphones",urlSmartphones),
-                TipusCategories(1, "Ordinadors",urlOrdinadors),
-                TipusCategories(1, "Televisors",urlTelevisors),
-                TipusCategories(1, "Movilitat",urlMovilitat)
+                TipusCategories(0, "", urlTitol),
+                TipusCategories(1, "Smartphones", urlSmartphones),
+                TipusCategories(1, "Ordinadors", urlOrdinadors),
+                TipusCategories(1, "Televisors", urlTelevisors),
+                TipusCategories(1, "Movilitat", urlMovilitat)
             ))
 
     }
