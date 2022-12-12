@@ -7,13 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.act9gonzaleznestor.R
 import com.example.act9gonzaleznestor.databinding.FragmentSeccioBinding
+import com.example.act9gonzaleznestor.Producte
 
 class SeccioFragment : Fragment() {
 
     private var _binding: FragmentSeccioBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private lateinit var llistaProductes: ArrayList<Producte>
     private val binding get() = _binding!!
 
     override fun onCreateView(
