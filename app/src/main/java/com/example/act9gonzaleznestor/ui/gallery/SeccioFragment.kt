@@ -1,11 +1,11 @@
 package com.example.act9gonzaleznestor.ui.gallery
 
-import android.icu.lang.UCharacter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.act9gonzaleznestor.R
 import com.example.act9gonzaleznestor.databinding.FragmentSeccioBinding
 
 class SeccioFragment : Fragment() {
@@ -21,31 +21,31 @@ class SeccioFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        _binding = FragmentSeccioBinding.inflate(inflater, container, false)
+        val root: View = binding.root
         when(arguments?.getInt("key")){
             1 -> omplirSmartphones()
             2 -> omplirOrdinadors()
             3 -> omplirTelevisors()
             4 -> omplirMovilitat()
         }
-        _binding = FragmentSeccioBinding.inflate(inflater, container, false)
-        val root: View = binding.root
         return root
     }
 
     private fun omplirSmartphones() {
-
+        binding.textGallery.text = getString(R.string.smartphones)
     }
 
     private fun omplirOrdinadors() {
-
+        binding.textGallery.text = getString(R.string.ordinadors)
     }
 
     private fun omplirTelevisors() {
-
+        binding.textGallery.text = getString(R.string.televisors)
     }
 
     private fun omplirMovilitat() {
-
+        binding.textGallery.text = getString(R.string.movilitat)
     }
 
 

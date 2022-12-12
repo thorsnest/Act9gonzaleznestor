@@ -28,7 +28,7 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_carret"
         android:name="com.example.act9gonzaleznestor.ui.slideshow.SlideshowFragment"
         android:label="@string/carret_de_compra"
         tools:layout="@layout/fragment_slideshow" />
